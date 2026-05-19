@@ -1,0 +1,53 @@
+{
+  "company": "Finvest",
+  "company_slug": "finvest",
+  "repo": "finn-ledger",
+  "package": "finn_ledger",
+  "cli": "finn-ledger",
+  "title": "Finn Ledger",
+  "problem": "Finn is sold as an autopilot wealth manager that \"executes money moves\" and \"optimizes tax.\" For a chatbot, that is enormously legally and operationally loaded. Three concrete things any due diligence grade user (or, more importantly, an OCC/SEC examiner or a fee paying customer's CFP) will ask the next time Finn proposes a trade are: (1) Did Finn consider wash sales across all linked accounts? - Robinhood + Fidelity + Wealthfront wash sales are the canonical retail investor footgun.",
+  "direction": "A deterministic, replayable \"decision ledger\" for AI wealth managers: every trade Finn proposes is a typed, simulated, wash sale safe MoveProposal with a tax impact diff and a counterfactual the user can accept, reject or amend in one tap.",
+  "why": "It picks the legal problem, not the flashy one. Anyone can ship \"Finn does tax loss harvesting.\" Almost nobody can ship the audit substrate that makes an RIA willing to trust Finn doing tax loss harvesting. The judgment to pick the un sexy layer is the signal.",
+  "terms": [
+    "autopilot",
+    "wealth",
+    "manager",
+    "executes",
+    "money",
+    "moves",
+    "optimizes",
+    "chatbot",
+    "enormously",
+    "legally",
+    "operationally",
+    "loaded",
+    "three",
+    "concrete",
+    "things",
+    "diligence",
+    "grade",
+    "importantly"
+  ],
+  "metrics": [
+    "autopilot_coverage",
+    "wealth_risk",
+    "manager_precision",
+    "executes_latency"
+  ],
+  "failure_modes": [
+    "autopilot_drift",
+    "wealth_gap",
+    "manager_misroute",
+    "executes_blindspot"
+  ],
+  "sources": [
+    "https://www.ycombinator.com/companies/finvest",
+    "https://www.usenix.org/conference/srecon22apac/speaker-or-organizer/shivam-bharuka-meta",
+    "https://github.com/Shivam2501",
+    "https://nocap.blog/founder/shivam-bharuka/",
+    "https://www.usenix.org/conference/srecon22apac/presentation/bharuka",
+    "https://alpaca.markets/docs/api-references/trading-api/",
+    "https://www.irs.gov/publications/p550"
+  ],
+  "github_url": "https://github.com/t7r0n/finn-ledger"
+}

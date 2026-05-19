@@ -1,0 +1,30 @@
+[project]
+name = "finn-ledger"
+version = "0.1.0"
+description = "A deterministic, replayable \"decision ledger\" for AI wealth managers: every trade Finn proposes is a typed, simulated, wash sale safe MovePr"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "Tarun Aditya Kusupati" }
+]
+dependencies = []
+
+[project.scripts]
+finn-ledger = "finn_ledger.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.0",
+    "ruff>=0.15.0",
+]
+
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

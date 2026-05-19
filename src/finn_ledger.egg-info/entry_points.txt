@@ -1,0 +1,2 @@
+[console_scripts]
+finn-ledger = finn_ledger.cli:main

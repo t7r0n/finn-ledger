@@ -1,0 +1,47 @@
+# Finn Ledger
+
+A deterministic, replayable "decision ledger" for AI wealth managers: every trade Finn proposes is a typed, simulated, wash sale safe MoveProposal with a tax impact diff and a counterfactual the user can accept, reject or amend in one tap.
+
+## Why This Exists
+
+Finn is sold as an autopilot wealth manager that "executes money moves" and "optimizes tax." For a chatbot, that is enormously legally and operationally loaded. Three concrete things any due diligence grade user (or, more importantly, an OCC/SEC examiner or a fee paying customer's CFP) will ask the next time Finn proposes a trade are: (1) Did Finn consider wash sales across all linked accounts? - Robinhood + Fidelity + Wealthfront wash sales are the canonical retail investor footgun.
+
+## What It Builds
+
+- Replays synthetic `autopilot` and `wealth` cases against the project's evidence rules.
+- Scores `autopilot_coverage`, `wealth_risk`, and `manager_precision` so regressions are visible in CSV and JSON.
+- Plants `autopilot drift` and `wealth gap` failures as negative controls.
+- Writes citation-locked decision claims; unsupported claims fail verification.
+- Exports a review dashboard and demo pack for `finn-ledger` without hosted services.
+
+## Local Run
+
+```bash
+uv sync
+uv run finn-ledger all
+uv run pytest -q
+uv run ruff check .
+```
+
+## Outputs
+
+- `outputs/analysis.json`
+- `outputs/scenario_report.csv`
+- `outputs/decision_report.md`
+- `outputs/evidence_packet.md`
+- `outputs/dashboard.html`
+- `outputs/demo_pack.zip`
+
+## Sources
+
+- https://www.ycombinator.com/companies/finvest
+- https://www.usenix.org/conference/srecon22apac/speaker-or-organizer/shivam-bharuka-meta
+- https://github.com/Shivam2501
+- https://nocap.blog/founder/shivam-bharuka/
+- https://www.usenix.org/conference/srecon22apac/presentation/bharuka
+- https://alpaca.markets/docs/api-references/trading-api/
+- https://www.irs.gov/publications/p550
+
+## Boundary
+
+This repository uses synthetic fixtures only. It has no credentials, no customer data, no outreach data, and no dependency on a hosted API.

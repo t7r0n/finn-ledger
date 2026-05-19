@@ -1,0 +1,7 @@
+scenario,cases,blocks,reviews,mean_severity,mean_score,top_evidence_id,recommended_action
+autopilot drift,24,2,3,2.5,0.3716,ev_0022,block release until replay is understood
+autopilot evidence recall,24,3,3,1.875,0.2899,ev_0066,block release until replay is understood
+executes policy boundary,24,2,3,1.708,0.2699,ev_0033,block release until replay is understood
+manager failure replay,24,2,4,3.333,0.5341,ev_0110,block release until replay is understood
+wealth gap,24,3,2,3.333,0.5322,ev_0143,block release until replay is understood
+wealth reviewer handoff,24,2,4,2.583,0.394,ev_0055,block release until replay is understood
