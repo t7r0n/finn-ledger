@@ -1,6 +1,6 @@
 # Operator Brief: Finvest
 
-Finvest gets a local, deterministic pressure test around autopilot, wealth, and manager. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action.
+Finvest gets a local, deterministic pressure test around autopilot, wealth, and manager. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 
