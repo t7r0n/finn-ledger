@@ -1,0 +1,69 @@
+{
+  "company": "Finvest",
+  "repo": "finn-ledger",
+  "terms": [
+    "autopilot",
+    "wealth",
+    "manager",
+    "executes",
+    "money",
+    "moves",
+    "optimizes",
+    "chatbot"
+  ],
+  "metrics": [
+    "autopilot_coverage",
+    "wealth_risk",
+    "manager_precision",
+    "executes_latency"
+  ],
+  "failure_modes": [
+    "autopilot_drift",
+    "wealth_gap",
+    "manager_misroute",
+    "executes_blindspot"
+  ],
+  "evidence_density": 17.75,
+  "pressure_index": 0.3167,
+  "blocked_share": 0.0972,
+  "review_share": 0.1319,
+  "top_leverage_points": [
+    {
+      "rank": 1,
+      "scenario": "autopilot evidence replay",
+      "metric": "autopilot_coverage",
+      "failure_mode": "autopilot_drift",
+      "evidence": "ev_0132",
+      "operator_action": "block release until cited evidence is regenerated",
+      "severity": 2.611
+    },
+    {
+      "rank": 2,
+      "scenario": "executes operator packet",
+      "metric": "wealth_risk",
+      "failure_mode": "wealth_gap",
+      "evidence": "ev_0143",
+      "operator_action": "accept only if decision claims cite fixture evidence",
+      "severity": 2.556
+    },
+    {
+      "rank": 3,
+      "scenario": "manager regression harness",
+      "metric": "manager_precision",
+      "failure_mode": "manager_misroute",
+      "evidence": "ev_0022",
+      "operator_action": "open a regression issue with trace and benchmark delta",
+      "severity": 2.528
+    },
+    {
+      "rank": 4,
+      "scenario": "wealth boundary probe",
+      "metric": "executes_latency",
+      "failure_mode": "executes_blindspot",
+      "evidence": "ev_0077",
+      "operator_action": "route to reviewer with evidence packet",
+      "severity": 2.528
+    }
+  ],
+  "readout": "Finvest gets a local, deterministic pressure test around autopilot, wealth, and manager. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action."
+}
