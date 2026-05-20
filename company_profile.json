@@ -5,7 +5,7 @@
   "package": "finn_ledger",
   "cli": "finn-ledger",
   "title": "Finn Ledger",
-  "problem": "Finn is sold as an autopilot wealth manager that \"executes money moves\" and \"optimizes tax.\" For a chatbot, that is enormously legally and operationally loaded. Three concrete things any due diligence grade user (or, more importantly, an OCC/SEC examiner or a fee paying customer's CFP) will ask the next time Finn proposes a trade are: (1) Did Finn consider wash sales across all linked accounts? - Robinhood + Fidelity + Wealthfront wash sales are the canonical retail investor footgun.",
+  "problem": "Finn is sold as an autopilot wealth manager that \"executes money moves\" and \"optimizes tax.\" For a chatbot, that is enormously legally and operationally loaded. Three concrete things any due diligence grade user (or, more importantly, an OCC/SEC examiner or a fee paying customer's CFP) will ask the next time Finn proposes a trade are: (1) Did Finn consider wash sales across all linked accounts? \u2014 Robinhood + Fidelity + Wealthfront wash sales are the canonical retail investor footgun.",
   "direction": "A deterministic, replayable \"decision ledger\" for AI wealth managers: every trade Finn proposes is a typed, simulated, wash sale safe MoveProposal with a tax impact diff and a counterfactual the user can accept, reject or amend in one tap.",
   "why": "It picks the legal problem, not the flashy one. Anyone can ship \"Finn does tax loss harvesting.\" Almost nobody can ship the audit substrate that makes an RIA willing to trust Finn doing tax loss harvesting. The judgment to pick the un sexy layer is the signal.",
   "terms": [
