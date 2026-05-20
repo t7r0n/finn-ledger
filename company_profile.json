@@ -40,6 +40,28 @@
     "manager_misroute",
     "executes_blindspot"
   ],
+  "archetypes": [
+    {
+      "name": "autopilot evidence replay",
+      "trigger": "autopilot signal changes while wealth context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "wealth boundary probe",
+      "trigger": "wealth handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "manager regression harness",
+      "trigger": "manager behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "executes operator packet",
+      "trigger": "executes output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
+  ],
   "sources": [
     "https://www.ycombinator.com/companies/finvest",
     "https://www.usenix.org/conference/srecon22apac/speaker-or-organizer/shivam-bharuka-meta",
