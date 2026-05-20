@@ -1,65 +1,57 @@
 {
   "repo": "finn-ledger",
-  "company": "Finvest",
+  "company": "Finn Ledger",
   "rubric_axes": [
     {
-      "axis": "autopilot_coverage",
+      "axis": "evidence_coverage",
       "failures": [
-        "autopilot_drift"
+        "evidence_drift"
       ],
       "evidence_required": true
     },
     {
-      "axis": "wealth_risk",
+      "axis": "handoff_risk",
       "failures": [
-        "wealth_gap"
+        "handoff_gap"
       ],
       "evidence_required": true
     },
     {
-      "axis": "manager_precision",
+      "axis": "claim_precision",
       "failures": [
-        "manager_misroute"
+        "claim_misroute"
       ],
       "evidence_required": true
     },
     {
-      "axis": "executes_latency",
+      "axis": "review_latency",
       "failures": [
-        "executes_blindspot"
+        "review_blindspot"
       ],
       "evidence_required": true
     }
   ],
   "archetypes": [
     {
-      "name": "autopilot evidence replay",
-      "trigger": "autopilot signal changes while wealth context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "wealth boundary probe",
-      "trigger": "wealth handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "manager regression harness",
-      "trigger": "manager behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "executes operator packet",
-      "trigger": "executes output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources_used": [
-    "https://www.ycombinator.com/companies/finvest",
-    "https://www.usenix.org/conference/srecon22apac/speaker-or-organizer/shivam-bharuka-meta",
-    "https://github.com/Shivam2501",
-    "https://nocap.blog/founder/shivam-bharuka/",
-    "https://www.usenix.org/conference/srecon22apac/presentation/bharuka",
-    "https://alpaca.markets/docs/api-references/trading-api/",
-    "https://www.irs.gov/publications/p550"
-  ]
+  "sources_used": []
 }

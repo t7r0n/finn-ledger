@@ -53,16 +53,6 @@ uv run ruff check .
 - `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
 
-## Sources
-
-- https://www.ycombinator.com/companies/finvest
-- https://www.usenix.org/conference/srecon22apac/speaker-or-organizer/shivam-bharuka-meta
-- https://github.com/Shivam2501
-- https://nocap.blog/founder/shivam-bharuka/
-- https://www.usenix.org/conference/srecon22apac/presentation/bharuka
-- https://alpaca.markets/docs/api-references/trading-api/
-- https://www.irs.gov/publications/p550
-
 ## Boundary
 
 Everything runs locally against synthetic fixtures. There are no credentials, no customer records, no outreach files, and no hosted API dependency.
